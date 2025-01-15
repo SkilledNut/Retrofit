@@ -2,13 +2,13 @@
 Je knjižnica, ki poenostvi delo z HTTP zahtevki med našo android aplikacijo in http strežnikom. Grajen je nad knjižico okHttp.
 
 # Prednosti in slabosti 
--✅ V večini primerov manj kode
--✅ Hitrejše doddajanje novih klicev
--✅ Podpira JSON de/serializacijo (s pomočjo Gson, Moshi, Kotlin Serialization, ...)
--✅ Enostavna podpora sinhronih in asinhronih klicev
--👎 Večja velikost knjižice, kot okHttp
--👎 Ne podpira spletnih vtičev (WebSocket)
--👎 Če nisi seznanjen z knjižico, večja kompleksnost kode
+- ✅ V večini primerov manj kode
+- ✅ Hitrejše doddajanje novih klicev
+- ✅ Podpira JSON de/serializacijo (s pomočjo Gson, Moshi, Kotlin Serialization, ...)
+- ✅ Enostavna podpora sinhronih in asinhronih klicev
+- 👎 Večja velikost knjižice, kot okHttp
+- 👎 Ne podpira spletnih vtičev (WebSocket)
+- 👎 Če nisi seznanjen z knjižico, večja kompleksnost kode
 
 # Licenca ⚖️
 **Apache Licenca 2:**
