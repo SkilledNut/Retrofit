@@ -34,7 +34,7 @@ dependencies {
 ```
 
 # Kako deluje? 🤔
-1. Naredimo Retrofit instanco
+### 1. Naredimo Retrofit instanco
 ```
 object RetrofitInstance {
     private const val BASE_URL = "http://11.11.11.111:3000" // Replace with your server URL
@@ -58,7 +58,7 @@ object RetrofitInstance {
     }
 }
 ```
-2. Defeniramo zahtevke, ki jih želimo poslati na strežnik
+### 2. Defeniramo zahtevke, ki jih želimo poslati na strežnik
 Zahtveke v osnovi defeniramo tako, da se v anotaciji funkcije odločimo za tip zahtevka (GET, POST, DELETE, PUT, ...) ter povemo pot kam želimo zahtevek poslati
 ```
 @GET("/path") // v tem primeru bi celotna pot zahtevka izgledala npr. tako: "http://11.11.11.111:3000/path" 
@@ -117,7 +117,7 @@ interface ApiService {
     fun postImage(@Part image: MultipartBody.Part) : Call<ServerResponse>
 }
 ```
-3. Implementirajmo dane funkcije, primer za getMessageFromServer():
+### 3. Implementirajmo dane funkcije, primer za getMessageFromServer():
 ```
 RetrofitInstance.api.getMessageFromServer().enqueue(object : Callback<ServerResponse> {
     override fun onResponse(call: Call<ServerResponse>, response: Response<ServerResponse>) {
